@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/157c2db6a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+</header> 
+<div class="wapper">
+<!-- ↑のwrapperはメニューバーを携帯で見れるようにするためのものby dotinstall -->
+<!-- メインエリアここからーーーーーーーーーーー -->
+<div class="top-wrapper">
+<div class="container">
+<div class="open-btn"> <i class="icon fas fa-bars" id="show"></i>
+</div>
+<h1 class="top-h1">welcome to our city</h1>
+<h1 class="top-h1-2">Let's search your favorite</h1>
+<p class= "top-p">このサイトでは桐生市の魅力を紹介していきます</p>
+<p class= "top-p">知らない街の楽しさに触れてもらうきっかけを作りたいと、2020年4月よりこのサイトをOpenしました。</p>
+<div class="btn-wrapper">
+<a href="#" class="btn email"><i class="fa far fa-envelope"></i>Email</a>
+<p class="top-p">お問い合わせ or その他リンク</p>
+<a href="https://www.instagram.com/kiri.kko/" class="btn instagram"><i class="fa fab fa-instagram"></i>Instagram</a>
+<a href="https://twitter.com/kirikko_hg" class="btn twitter"><i class="fa fab fa-twitter"></i>Twitter</a>
+<a href="https://kirikko-scondcube.hatenablog.com" class="btn blog"><i class="fa fas fa-user-edit"></i>Blog</a>
+<a href="#" class="btn youtube"><i class="fa fas fa-video"></i>Youtube</a>
+</div>
+</div>
+</div>
+<!-- メインエリアここまで ーーーーーーーーーーーー-->
+
+<!-- ワークスエリアここから ーーーーーーー-->
+<div class="work-wrapper">
+<div class="container">
+<div class="heading wheading">
+<h2>LP製作とデザイン</h2>
+<p class="w-p">そのお店の雰囲気を再現したLP作りの為の打ち合わせと作成まで一貫して行います。</p>
+<p class="w-p">専任の担当者が通して作成することで最適なご提案を可能に。</p>
+<h3 class="wh3">Works</h3>
+</div>
+<div class="works">
+<!-- work〜txt-contentsの下の/div>までが一つのliのかたまり -->
+<div class="work">
+<div class="works-icon">
+<img src="images/make-s.jpg" class="wimg" alt="">
+<p>At.Cosmetic</p>
+</div>
+<p class="txt-contents">順次実際の製作物を掲載予定です</p>
+</div>
+<div class="work">
+<div class="works-icon">
+<img src="images/bath-s.jpg" class="wimg" alt="">
+<p>At.Sope</p>
+</div>
+<p class="txt-contents">順次実際の製作物を掲載予定です</p>
+</div>
+<div class="work">
+<div class="works-icon">
+<img src="images/pupet-s.jpg" class="wimg" alt="">
+<p>At.Art</p>
+</div>
+<p class="txt-contents">順次実際の製作物を掲載予定です</p>
+</div>
+<div class="work">
+<div class="works-icon">
+<img src="images/man-s.jpg" class="wimg" alt="">
+<p>At.People</p>
+</div>
+<p class="txt-contents">順次実際の製作物を掲載予定です</p>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+
+
+<div class="message-wrapper">
+<div class="container">
+<div class="heading">
+<h3><a href="#" class="watag">More works</a></h3>
+</div>
+<span class="btn message">Qulick!</span>
+</div>
+</div>
+
+<div class="message2-wrapper"
+><div class="container">
+<div class="heading-message">
+<h4>お知らせ</h4>
+<p>2020.4月1日　サイトリニューアル</p>
+</div>
+</div></div>
+
+
+
+<footer>
+<div class="container">
+<p class="footerP">enjoy your visit, in kiryu city with us</p>
+<p class="footerP">©️kirikko</p>
+</div>
+</footer>
+
+
+
+<!-- サイドメニュー -->
+<!-- ２層目 -->
+<div id="cover"></div>
+<!-- 3層目 -->
+<div id="menu">
+<i class="icon fas fa-caret-down" id="hide"></i>
+<ul>
+<li><a href="#" class="nav-menu">Home</a></li>
+<li><a href="#" class="nav-menu">About</a></li>
+<li><a href="#" class="nav-menu">Works</a></li>
+<li><a href="#"class="nav-menu">City</a></li>
+<li><a href="#" class="nav-menu">Contact</a></li>
+</ul>
+</div>
+<script>
+(function() {
+'use strict';
+let show = document.getElementById('show');
+let hide = document.getElementById('hide');
+show.addEventListener('click', function() {
+document.body.className = 'menu-open';
+});
+hide.addEventListener('click', function() {
+document.body.className = '';
+});
+})();
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+*{
+box-sizing: border-box;
+}
+
+
+body {
+margin:0;
+font-family: 'Noto Serif JP', serif;
+/* font-family: "Hiragino Kaku Gothic ProN"; */
+overflow-x: hidden;
+/* これによりサイドメニューの画面に移動しないように設定by.dot.instal ハンバーガーメニューの７ */
+}
+
+
+a {
+text-decoration: none;
+color:white;
+display: block;
+/* padding:16px; */
+/* margin:0; */
+}
+a:hover {
+transition: 0.7s;
+background-color:rgb(204, 193, 193);
+}
+/* 共通部分 */
+.container {
+max-width: 1170px;
+width: 100%;
+padding: 0 15px;
+margin: 0 auto;
+}
+/* メインエリア */
+.top-wrapper{
+padding: 180px 0 100px 0;;
+background-image: url(../images/sun1280.jpg);
+background-size: cover;
+color:rgb(132, 170, 241);
+text-align: center;
+}
+.top-wrapper h1 {
+opacity:0.7;
+font-size: 45px;
+letter-spacing: 4px;
+}
+
+.top-wrapper p {
+opacity: 0.7;
+}
+.btn {
+padding: 8px 24px;
+color: white;
+display: inline-block;
+opacity: 0.8;
+border-radius: 4px;
+}
+.btn:hover{
+opacity:1;
+}
+.email {
+background-color: #65dfbb;
+}
+
+.instagram {
+background-color: #e350be;
+margin-right: 10px;
+}
+.twitter {
+background-color: #3890cb;
+margin-right: 10px;
+}
+.blog {
+background-color: #b6c7c2;
+margin-right: 10px;
+}
+.youtube {
+background-color: #db1010;
+}
+.btn-wrapper {
+margin: 20px 0;
+}
+.btn-wrapper p {
+margin: 10px 0;
+}
+.fa{
+margin-right: 5px;
+}
+/* ワークスエリア--------------------------------------------------------------- */
+.work-wrapper {
+/* height: 500px; */
+padding-bottom: 0;
+background-color:white;
+/* text-align: center; */
+}
+.heading {
+padding:60px 30px;
+color:#082b77;
+text-align: center;
+margin-bottom: 100px;
+}
+.heading h2 {
+font-weight: normal;
+font-family:Futo Go B101;
+letter-spacing: 7px;
+}
+h3 {
+text-align: center;
+}
+
+.work {
+float: left;
+width: 25%;
+}
+.clear {
+clear:left;
+}
+.wh3{
+margin-top: 100px;
+margin-bottom: 0;
+font-size: 30px;
+}
+.wimg{
+width:199px;
+height: auto;
+}
+.works-icon {
+position: relative;
+}
+.works-icon p {
+position: absolute;
+top:1px;
+left:10px;
+color:#9169a1;
+}
+.txt-contents {
+width:80%;
+display: inline-block;
+margin-top: 20px;
+font-size: 12px;
+color: #b3aeb5
+}
+/* メッセージエリアーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.message-wrapper {
+padding-bottom:80px;
+text-align:center;
+}
+
+
+
+
+.message2-wrapper .container{
+background-color: rgb(235, 221, 213);
+}
+.message {
+background-color: rgb(241, 228, 181);
+padding:15px 40px;
+font-weight: bold;
+cursor: pointer;
+color:black;
+box-shadow: 0 7px #8b8058;
+
+}
+.message:active {
+position: relative;
+top:7px;
+box-shadow: none;
+}
+footer{
+padding-top:30px;
+}
+.footerP{
+color:#b3aeb5;
+font-size: 12px;
+}
+
+.heading-message {
+padding:80px;
+position: relative;
+}
+h4 {
+position: absolute;
+top:0;
+font-size: 20px;
+border-bottom: blanchedalmond;
+}
+.watag{
+color:#082b77;
+}
+
+
+
+/* サイドメニュー */
+/* メニュー閉じているときのスタイル */
+.wrapper {
+/* サイドメニュー用記述↓ */
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+min-height: 100vh; /* 追加 */
+position: relative; /* 追加 */
+-webkit-overflow-scrolling: touch; /* 追加 */
+}
+
+
+
+.open-btn {
+position: absolute;
+top:0;
+right: 0;
+/* font-size: 22px; */
+padding: 0;
+margin:0;
+}
+.icon {
+font-size: 30px;
+color:rgb(13, 102, 190)
+}
+#cover {
+background:#000;
+opacity: 0.6;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left:0; 
+z-index: 1;
+display: none;
+}
+#menu {
+z-index: 2;
+position: absolute;
+top: 0;
+right: -180px;
+color: #fff;
+background: rgba(rgba(247, 216, 150, 0.7),green, blue, alpha);
+padding: 8px;
+box-sizing: border-box;
+width: 180px;
+min-height: 100%;
+transition: .4s;
+}
+#show {
+float: right;
+cursor: pointer;
+}
+#hide {
+float: right;
+cursor: pointer;
+}
+body.menu-open {
+overflow-y: hidden;
+}
+body.menu-open #cover{
+display: block;
+}
+body.menu-open #menu{
+right:0;
+}
+ul {
+list-style: none;
+}
+li {
+padding:10px;
+font-size: 22px;
+font-weight: bold;
+}
